@@ -1,0 +1,9 @@
+package es.pruebas.ioc;
+
+public class JefeEmpleado {
+	
+	public String getTareas() {
+		return "La mandanga";
+	}
+
+}

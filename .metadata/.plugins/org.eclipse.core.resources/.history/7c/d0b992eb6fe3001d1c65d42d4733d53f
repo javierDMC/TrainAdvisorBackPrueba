@@ -1,0 +1,9 @@
+package es.pruebas.ioc;
+
+public class JefeEmpleado implements Empleados{
+	
+	public String getTareas() {
+		return "Soy el Jefe";
+	}
+
+}

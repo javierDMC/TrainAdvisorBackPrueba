@@ -1,0 +1,5 @@
+package es.pruebas.ioc;
+
+public interface Empleados {
+
+}
