@@ -1,16 +1,17 @@
 package es.train.main;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Maquinista implements Empleados {
 
 	
-	@Autowired
+	/*@Autowired
 	public Maquinista(CreacionInformeTren nuevoInforme) {
 		this.nuevoInforme = nuevoInforme;
-	}
+	}*/
 
 	@Override
 	public String getTareas() {
@@ -25,6 +26,8 @@ public class Maquinista implements Empleados {
 		return nuevoInforme.getInformeTren();
 	}
 	
+	@Autowired
+	@Qualifier("informeTren130")
 	private CreacionInformeTren nuevoInforme;
 
 }

@@ -20,7 +20,6 @@ INDEX VERSION 1.132+D:\Documentos\DAW\2º curso\Proyecto de Desarrollo de aplicac
 443304677.index
 1650962052.index
 1599635474.index
-1167034215.index
 4229560864.index
 3548342582.index
 3031184939.index
