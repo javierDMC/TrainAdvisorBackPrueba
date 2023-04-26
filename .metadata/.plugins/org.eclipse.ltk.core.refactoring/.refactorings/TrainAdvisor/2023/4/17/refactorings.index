@@ -11,3 +11,6 @@
 1682434442171	Rename type 'main'
 1682435045303	Rename type 'UsoEmpleados'
 1682435066745	Delete element
+1682493205300	Rename resource 'applicationContext.xml'
+1682493225715	Delete element
+1682493239873	Copy file
