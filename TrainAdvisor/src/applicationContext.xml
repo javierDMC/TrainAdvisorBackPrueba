@@ -9,6 +9,10 @@
     http://www.springframework.org/schema/context/spring-context-3.1.xsd
 ">
 
+<!-- Carga con archivo externo de las propiedades -->
+<context:property-placeholder location="classpath:datosEmpresa.propiedades"/>
+
+
 <!-- creacion de la dependencia -->
 <bean id="miInforme" class="es.train.main.Informe"></bean>
 
@@ -21,11 +25,26 @@
 </bean>
 
 
+<bean id="miDirectorEmpleado" class="es.train.main.DirectorEmpleado">
+
+	<constructor-arg ref="miInforme"></constructor-arg>
+	
+	<property name="email" value="${email}"></property>
+
+	<property name="nombreEmpresa" value="${nombreEmpresa}"></property>
+
+
+</bean>
+
+
 
 <bean id="miSecretarioEmpleado" class="es.train.main.SecretarioEmpleado">
 
 	<property name="informeNuevo" ref="miInforme"></property>
+	
+	<property name="email" value="secretaria@trainadvisor.es"></property>
 
+	<property name="nombreEmpresa" value="TrainAdvisor"></property>
 </bean>
 
 
