@@ -1,9 +1,16 @@
 package es.train.main;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component("Maquinista")
+@Component
 public class Maquinista implements Empleados {
+
+	
+	@Autowired
+	public Maquinista(CreacionInformeTren nuevoInforme) {
+		this.nuevoInforme = nuevoInforme;
+	}
 
 	@Override
 	public String getTareas() {
@@ -14,7 +21,10 @@ public class Maquinista implements Empleados {
 	@Override
 	public String getInforme() {
 		// TODO Auto-generated method stub
-		return "Informe de tren ok";
+		//return "Informe de tren ok";
+		return nuevoInforme.getInformeTren();
 	}
+	
+	private CreacionInformeTren nuevoInforme;
 
 }

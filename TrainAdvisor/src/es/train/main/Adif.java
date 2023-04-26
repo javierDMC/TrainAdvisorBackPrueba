@@ -13,7 +13,7 @@ public class Adif {
 		
 		//pedir un bean al contenedor
 		
-		Empleados Antonio = contexto.getBean("Maquinista", Empleados.class);
+		Empleados Antonio = contexto.getBean("maquinista", Empleados.class);
 		
 		//usar el bean
 		
